@@ -13,7 +13,7 @@ class Server < Sinatra::Base
   end
 
   get '/:hashid' do
-    halt(404) unless link
+    halt 422 unless link
     redirect link.url
   end
 end

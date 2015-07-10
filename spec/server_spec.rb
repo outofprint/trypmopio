@@ -20,6 +20,6 @@ describe Server do
 
   it 'handles bad hashids' do
     get '/bad'
-    last_response.must_be :not_found?
+    last_response.must_be :unprocessable?
   end
 end
