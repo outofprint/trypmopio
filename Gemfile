@@ -4,6 +4,7 @@ ruby '2.2.2'
 
 gem 'hashids'
 gem 'pry'
+gem 'newrelic_rpm'
 gem 'rake'
 gem 'rollbar'
 gem 'sequel_pg'

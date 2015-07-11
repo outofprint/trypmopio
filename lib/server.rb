@@ -3,6 +3,7 @@ require 'sinatra/base'
 
 class Server < Sinatra::Base
   configure :production do
+    require 'newrelic_rpm'
     require 'rollbar/rack'
   end
 
