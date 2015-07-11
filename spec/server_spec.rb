@@ -12,6 +12,11 @@ describe Server do
     Link.dataset.delete
   end
 
+  it 'has a root' do
+    get '/'
+    last_response.body.wont_be_empty
+  end
+
   it 'redirects' do
     get "/#{link.hashid}"
     follow_redirect!
