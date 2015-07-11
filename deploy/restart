@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo restart trymopio 2>/dev/null || sudo start trymopio
