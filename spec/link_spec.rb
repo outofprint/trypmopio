@@ -3,6 +3,7 @@ require 'server'
 
 describe Link do
   let(:link) { Link.create(url: 'foo') }
+
   before do
     Link.dataset.delete
   end
