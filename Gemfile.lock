@@ -5,10 +5,10 @@ GEM
     hashids (1.0.2)
     kgio (2.10.0)
     method_source (0.8.2)
-    minitest (5.8.2)
+    minitest (5.8.3)
     multi_json (1.11.2)
-    newrelic_rpm (3.14.0.305)
-    pg (0.18.3)
+    newrelic_rpm (3.14.1.311)
+    pg (0.18.4)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -20,9 +20,9 @@ GEM
       rack (>= 1.0)
     raindrops (0.15.0)
     rake (10.4.2)
-    rollbar (2.5.2)
+    rollbar (2.7.1)
       multi_json
-    sequel (4.28.0)
+    sequel (4.29.0)
     sequel_pg (1.6.13)
       pg (>= 0.8.0)
       sequel (>= 3.39.0)
@@ -34,7 +34,7 @@ GEM
       tilt (>= 1.3, < 3)
     slop (3.6.0)
     tilt (2.0.1)
-    unicorn (5.0.0)
+    unicorn (5.0.1)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -56,4 +56,4 @@ DEPENDENCIES
   unicorn
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
