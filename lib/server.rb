@@ -1,11 +1,10 @@
 require 'link'
+require 'newrelic_rpm'
+require 'rollbar/middleware/sinatra'
 require 'sinatra/base'
 
 class Server < Sinatra::Base
-  configure :production do
-    require 'newrelic_rpm'
-    require 'rollbar/rack'
-  end
+  use Rollbar::Middleware::Sinatra
 
   helpers do
     def link
