@@ -14,7 +14,7 @@ describe Server do
 
   it 'has a root' do
     get '/'
-    last_response.body.wont_be_empty
+    last_response.must_be :ok?
   end
 
   it 'redirects' do
@@ -26,5 +26,10 @@ describe Server do
   it 'handles bad hashids' do
     get '/bad'
     last_response.must_be :unprocessable?
+  end
+
+  it 'ignores favicon requests' do
+    get '/favicon.ico'
+    last_response.must_be :ok?
   end
 end

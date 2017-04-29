@@ -6,8 +6,8 @@ require 'sinatra/base'
 class Server < Sinatra::Base
   use Rollbar::Middleware::Sinatra
 
-  get '/' do
-    'Hi!'
+  get %r{^/(?:favicon.ico)*$} do
+    halt 200
   end
 
   get '/:hashid' do
