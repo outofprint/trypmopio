@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.4.0'
+ruby '2.4.1'
 
 gem 'hashids'
 gem 'pry'
