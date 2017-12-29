@@ -4,7 +4,7 @@ ruby '2.5.0'
 
 gem 'hashids'
 gem 'rake'
-gem 'rollbar'
+gem 'sentry-raven'
 gem 'sequel_pg'
 gem 'sinatra'
 gem 'unicorn'

@@ -1,9 +1,9 @@
 require 'link'
-require 'rollbar/middleware/sinatra'
+require 'raven'
 require 'sinatra/base'
 
 class Server < Sinatra::Base
-  use Rollbar::Middleware::Sinatra
+  use Raven::Rack
 
   get %r{/(?:favicon.ico)*} do
     halt 200
