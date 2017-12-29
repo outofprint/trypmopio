@@ -1,10 +1,8 @@
 source 'http://rubygems.org'
 
-ruby '2.4.1'
+ruby '2.5.0'
 
 gem 'hashids'
-gem 'pry'
-gem 'newrelic_rpm'
 gem 'rake'
 gem 'rollbar'
 gem 'sequel_pg'

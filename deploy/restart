@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-sudo restart try.mop.io 2>/dev/null || sudo start try.mop.io

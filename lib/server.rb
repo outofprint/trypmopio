@@ -1,12 +1,11 @@
 require 'link'
-require 'newrelic_rpm'
 require 'rollbar/middleware/sinatra'
 require 'sinatra/base'
 
 class Server < Sinatra::Base
   use Rollbar::Middleware::Sinatra
 
-  get %r{^/(?:favicon.ico)*$} do
+  get %r{/(?:favicon.ico)*} do
     halt 200
   end
 
