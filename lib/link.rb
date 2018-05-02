@@ -8,6 +8,7 @@ class Link < Sequel::Model
 
     def find_by_hashid(hashid)
       first(id: hashids.decode(hashid))
+    rescue Hashids::InputError
     end
   end
 
