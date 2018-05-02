@@ -3,7 +3,7 @@ require 'pathname'
 module App
   class << self
     def env
-      ENV.fetch('RACK_ENV', 'development')
+      ENV.fetch('APP_ENV', 'development')
     end
 
     def root
