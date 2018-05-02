@@ -25,7 +25,7 @@ describe Server do
 
   it 'handles bad hashids' do
     get '/bad'
-    last_response.must_be :unprocessable?
+    last_response.must_be :not_found?
   end
 
   it 'ignores favicon requests' do

@@ -11,7 +11,7 @@ class Server < Sinatra::Base
 
   get '/:hashid' do
     link = Link.find_by_hashid(params['hashid'])
-    halt 422 unless link
+    halt 404 unless link
     redirect link.url
   end
 end
